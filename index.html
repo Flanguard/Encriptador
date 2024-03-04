@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css"> 
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vecteezy.com%2Farte-vectorial%2F3484873-icono-de-candado-cerrado-uno-de-iconos-de-coleccion-simple-para-sitios-web&psig=AOvVaw1K1zIIhnvQJw75dTNkkfW4&ust=1709604926332000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOi8n-TE2YQDFQAAAAAdAAAAABAE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Micro+5&family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Encriptador</h1>
-    </header>
     <main>
-        <div>
-            <textarea class="textArea"></textarea>
-            <input onclick="encriptar()" type="submit" value="Encriptar">
-            <input onclick="descifrar()" type="submit" value="Desencriptar">
-        </div>
-        <div>
-            <textarea readonly class="mostrarTexto"></textarea>
+        <h1>Encriptador de Texto</h1>
+        <p>Challenge Alura</p>
+        <div id="content">
+            <section class="line-block first">
+                <textarea class="textArea areas" placeholder="Ingrese el texto aqui" pattern="[a-z]+"></textarea>
+                <div class="btn">
+                    <input class="bt" onclick="encriptar(); limpiar()" type="submit" value="Encriptar">
+                    <input class="bt" onclick="descifrar(); limpiar()" type="submit" value="Desencriptar">
+                </div>
+            </section>
+            <section class="line-block second">
+                    <textarea class="mostrarTexto areas" readonly></textarea>
+                    <div class="btn">
+                        <input onclick="" type="submit" value="Copiar" id="copy" disabled>
+                    </div>
+            </section>
         </div>
     </main>
+    <footer class="footer">
+            <div class="icon">
+                <a href="https://github.com/Flanguard" target="_blank"><i class="fab fa-github"> Flanguard</i></a>Flanguard
+            </div>
+            <p>© 2024 Encriptador Alura Latam</p>>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html> 

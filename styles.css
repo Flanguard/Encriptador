@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://wallpapersmug.com/download/1920x1080/8195b5/highway-dark-minimal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+h1, p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#content{
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    height: 90%;;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 40px 15px 40px 15px;
+}
+
+.line-block{
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 10px 0 10px;
+}
+.first{
+    margin: 0 auto;
+}
+.btn{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+}
+.bt{
+   width: 49.5%; 
+   height: 100%;
+}
+.second{
+    left: auto;
+}
+.mostrarTexto{
+    background-image: url("https://wallpaperaccess.com/full/805624.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.areas{
+    height: 85%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    resize: none;
+    background-color: #3B3B4F30;
+    color: white;
+    font-size: 34px;
+    outline: none;
+}
+#copy{
+    width: 100%;
+    height: 100%;
+}
+.bt, #copy{
+    font-size: 21.5px;
+    border-radius: 2px;
+    color: white;
+    background-color: black;
+    border: 2px solid darkslategrey;
+    margin-top: 5px;
+    transition: 1s;
+}
+.bt:hover, #copy:hover{
+    background-color: #1B1B3150;
+}
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a{
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 875px) and (min-width: 421px){
+    main{
+        padding: 20px 5px 5px 5px;
+        height: 100%;
+    }
+    h1, p{
+        text-align: center;
+        color: white;
+        font-size: 30px
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    #content{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 4px;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .line-block{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-height: 65%;
+        flex-grow: 4;
+    }
+    .first{
+        margin-top: -13px;
+    }
+    .btn{
+        width: 100%;
+        height: 90px;
+    }
+    .second{
+        margin-top: 30px;
+    }
+    .bt{
+        width: 100%;
+    }
+    .bt, #copy{
+        font-size: 21.5px;
+        max-height: 45%;
+    }
+    .mostrarTexto{
+        margin-top: 20px;
+    }
+    .areas{
+        max-height: 70%;
+        width: 100%;
+        font-size: 30px;
+    }
+    .footer{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+    .icon a{
+        color: white;
+        
+    }
+}
+@media (max-width: 420px) {
+    main{
+        padding: 20px 0px 0px 5px;
+        height: 100%;
+    }
+    h1, p{
+        text-align: center;
+        color: white;
+        font-size: 25px
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    #content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: unset;
+        height: 90%;
+        margin: 0px 0px 0px -3px;
+        padding: 4px;
+    }
+    
+    .line-block{
+        width: 100%;
+        max-height: 65%;
+        flex-grow: 4;
+    }
+    .first{
+        margin-top: -13px;
+    }
+    .btn{
+        width: 100%;
+        height: 90px;
+    }
+    .second{
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .bt{
+        width: 49.5%;
+    }
+    .bt, #copy{
+        font-size: 21.5px;
+        max-height: 45%;
+    }
+    .mostrarTexto{
+        margin-top: 20px;
+    }
+    .areas{
+        max-height: 70%;
+        width: 100%;
+        font-size: 30px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    }
+    
+    .icon a{
+        color: white;
+    }
+    .footer p {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+}
